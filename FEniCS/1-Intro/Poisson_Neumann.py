@@ -19,7 +19,7 @@ import numpy as np
 channel = Rectangle(Point(0, 0), Point(1.0, 2.0))  #0<x<1 and 0<y<2
 mesh = generate_mesh(channel, 20) #the higher the set value here, the more eresolved the mesh
 #mesh = UnitSquareMesh(8, 8)
-V = FunctionSpace(mesh, 'P', 1)  #1st order FEM
+V = FunctionSpace(mesh, 'P', 1)  #1st order FEM, if want to higher order FEM change the number
 
 
 
